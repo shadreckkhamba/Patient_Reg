@@ -1,0 +1,12 @@
+<h1> Patient Details </h1>
+
+<p><strong>Name:</strong> <%= @patient.name %></p>
+<p><strong>Age:</strong> <%= @patient.age %></p>
+<p><strong>Email:</strong> <%= @patient.email %></p>
+<p><strong>Payment:</strong> <%= @patient.amount %></p>
+<p><strong>Position:</strong> <%= @patient.position %></p>
+<p><strong>Gender:</strong> <%= @patient.gender %></p>
+<p><strong>User ID:</strong> <%= @patient.user_id %></p>
+<p><strong>Response:</strong> <%= @patient.response %></p>
+
+<%= link_to 'See Patients List', patients_path %>
