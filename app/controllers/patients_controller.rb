@@ -13,7 +13,6 @@ class PatientsController < ApplicationController
         @patient = Patient.new(patient_params)
         @patient.user_id = generate_user_id
 
-        # Debugging output to check if the patient is being saved
         puts "Patient Params: #{@patient.inspect}"
 
         if @patient.save
@@ -37,6 +36,6 @@ class PatientsController < ApplicationController
     end
     
     def patient_params
-        params.require(:patient).permit(:name, :email, :age, :gender, :amount, :position, :user_id, :response)
+        params.require(:patient).permit(:name, :email, :age, :gender, :amount, :location, :user_id, :response)
     end
 end

@@ -6,7 +6,7 @@ one:
   email: MyString
   gender: MyString
   amount: 1.5
-  position: MyString
+  location: MyString
   user_id: MyString
   response: MyString
 
@@ -16,6 +16,6 @@ two:
   email: MyString
   gender: MyString
   amount: 1.5
-  position: MyString
+  location: MyString
   user_id: MyString
   response: MyString

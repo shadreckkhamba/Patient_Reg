@@ -1,0 +1,24 @@
+<table class = "styled-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Location</th>
+      <th>Gender</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @patients.each do |patient| %>
+      <tr>
+        <td><%= patient.name %></td>
+        <td><%= patient.age %></td>
+        <td><%= patient.email %></td>
+        <td><%= patient.location %></td>
+        <td><%= patient.gender %></td>
+        <td><%= link_to 'View', patient_path(patient) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

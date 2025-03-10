@@ -6,7 +6,7 @@ class CreatePatients < ActiveRecord::Migration[7.1]
       t.string :email
       t.string :gender
       t.float :amount
-      t.string :position
+      t.string :location
       t.string :user_id
       t.string :response
 
